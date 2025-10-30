@@ -3,6 +3,7 @@ from enum import StrEnum
 class CrocItemNames(StrEnum):
     GOBBO = "Gobbo"
     PUZZLE = "Puzzle Piece"
+    LIFE = "Extra Life"
 
     FULLJUMP = "Max Height Jump"
     WALLCLIMB = "Wall Climb"
