@@ -1,10 +1,12 @@
 from enum import StrEnum
 
 class CrocItemNames(StrEnum):
+    # Collectibles
     GOBBO = "Gobbo"
     PUZZLE = "Puzzle Piece"
     LIFE = "Extra Life"
 
+    # Movement
     FULLJUMP = "Max Height Jump"
     WALLCLIMB = "Wall Climb"
     SWIM = "Swim"
@@ -12,17 +14,9 @@ class CrocItemNames(StrEnum):
     LEDGEGRAB = "Ledge Grab"
     TAIL = "Tail Swipe"
 
-    BOXBREAK = "Box Break"
-    JELLY = "Jelly"
-    BALLOON = "Balloon"
-    CORK = "Cork"
-    CAGEKEY = "Cage Key"
-    DOORKEY =  "Door Key"
-    VANISHBUTTON = "Vanishing Button"
-    SWAPBUTTON = "Swapping Button"
+    MONKEYBARS = "Monkey Bars"  # In between movement and platforms because idk how we wanna handle it
 
-    MONKEYBARS = "Monkey Bars"
-
+    # Platforms
     CRUMBLEPLAT = "Crumbling Platforms"
     MOVEPLAT = "Moving Platforms"
     ROTATEPLAT = "Rotating Platforms"
@@ -37,10 +31,22 @@ class CrocItemNames(StrEnum):
     LAVAPLAT = "Lava Platforms"
     TRIGGERPLAT = "Triggered Platforms"
 
-    SHUFFLE = "Shuffle Minigame"
+    # Interactibles
+    BOXBREAK = "Box Break"
+    JELLY = "Jelly"
+    BALLOON = "Balloon"
+    CORK = "Cork"
+    CAGEKEY = "Cage Key"
+    DOORKEY =  "Door Key"
+    VANISHBUTTON = "Vanishing Button"
+    SWAPBUTTON = "Swapping Button"
+
+    # Minigames
+    SHUFFLE = "Shell Game Minigame"
     WHACKAMOLE = "Whack-a-Mole Minigame"
     CHASERBOX = "Chaser Box Minigame"
 
+    # Crystals. Probably event only? idk how we're doing this yet
     RED = "Red Crystal"
     GREEN =  "Green Crystal"
     YELLOW = "Yellow Crystal"
@@ -48,6 +54,7 @@ class CrocItemNames(StrEnum):
     BLUE = "Blue Crystal"
     WHITE = "White Crystal"
 
+    # Maps. Maybe progressive? If we wanna gate levels.
     FORESTMAP = "Forest Island Map"
     ICEMAP = "Ice Island Map"
     DESERTMAP = "Desert Island Map"
