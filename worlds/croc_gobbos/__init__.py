@@ -20,7 +20,7 @@ class CrocWebWorld(WebWorld):
 class CrocWorld(World):
     """The Archipelago Randomizer World for Croc: The Legend of the Gobbos. If you see this on a website, I didn't finish the documentation, so yell at me for it."""
 
-    game = "Croc: The Legend of the Gobbos"
+    game = "Croc: Legend of the Gobbos"
     options: CrocOptions
     options_dataclass = CrocOptions
     web = CrocWebWorld()
