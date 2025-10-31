@@ -115,7 +115,7 @@ class CrocLevelNames(StrEnum):
     L5B1 = "5-B1 Secret Sentinel"
 
 class CrocLocationNames(StrEnum):
-    # Keys are encoding what they are. Always starts with "L" for location.
+    # Keys are encoding what they are. Always starts with "L" for location (or level, your pick).
     # Next num is island number.
     # Next char (or two) is level number."B" for boss, "S" for secret.
     # Next char is type. "G" for Gobbo, "C" for Crystal, "X" for Goal (eXit), "H" for Heart, "K" for Key.
@@ -290,6 +290,14 @@ class CrocLocationNames(StrEnum):
     L23CY = "2-3 - Yellow Crystal"
     L23X1 = "2-3 - Goal"
     L23X2 = "2-3 - Crystal Goal"
+    L23K1 = "2-3 - Cage Key"
+    L23K2 = "2-3 - Door Key (First)"
+    L23K3 = "2-3 - Door Key (Second)"
+
+    L2B1X1 = "2-B1 - Defeat Chumly"
+
+    L2S1X1 = "2-S1 - Puzzle Piece"
+    L2S1H1 = "2-S1 - Extra Life near Puzzle Piece"
 
     L24G1 = ""
     L24G2 = ""
@@ -304,6 +312,12 @@ class CrocLocationNames(StrEnum):
     L24CY = "2-4 - Yellow Crystal"
     L24X1 = "2-4 - Goal"
     L24X2 = "2-4 - Crystal Goal"
+    L24H1 = "2-4 - Extra Life in Secret (Top Left)"
+    L24H2 = "2-4 - Extra Life in Secret (Top Right)"
+    L24H3 = "2-4 - Extra Life in Secret (Bottom Left)"
+    L24H4 = "2-4 - Extra Life in Secret (Bottom Right)"
+    L24H5 = "2-4 - Extra Life in Secret (Center)"
+    L24K1 = "2-4 - Cage Key"
 
     L25G1 = ""
     L25G2 = ""
