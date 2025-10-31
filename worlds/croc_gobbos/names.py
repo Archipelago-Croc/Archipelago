@@ -115,6 +115,17 @@ class CrocLevelNames(StrEnum):
     L5B1 = "5-B1 Secret Sentinel"
 
 class CrocLocationNames(StrEnum):
+    # Keys are encoding what they are. Always starts with "L" for location.
+    # Next num is island number.
+    # Next char (or two) is level number."B" for boss, "S" for secret.
+    # Next char is type. "G" for Gobbo, "C" for Crystal, "X" for Goal (eXit), "H" for Heart, "K" for Key.
+    # Last character is an indentifier:
+    #   - Crystals: Letter for color (P Pink, R Red, B Blue, G Green, Y Yellow)
+    #   - Gobbo: Numbered (usually in level order)
+    #   - Goals: Number for distinction. 1 for main (gong, boss, puzzle), 2 for gong in the Crystal Zone (if it exists)
+    #   - Hearts: Numbered (usually in level order)
+    #   - Keys: Numbered. 1 = the cage key, 2+ = door keys, etc. Don't think there's multiple cage keys in a level anywhere.
+
     L11G1 = "1-1 - Gobbo on Cork"
     L11G2 = "1-1 - Gobbo in Cork Well"
     L11G3 = "1-1 - Gobbo in Second Room"
@@ -133,6 +144,7 @@ class CrocLocationNames(StrEnum):
     L11H3 = "1-1 - Extra Life in Secret (Center)"
     L11H4 = "1-1 - Extra Life behind Rock in Crystal Zone"
     L11H5 = "1-1 - Extra Life in Cork Well"
+    L11K1 = "1-1 - Cage Key"
     
     L12G1 = "1-2 - Gobbo in Box in Upper Well"
     L12G2 = "1-2 - Gobbo in Box under Stairs"
@@ -148,6 +160,7 @@ class CrocLocationNames(StrEnum):
     L12X1 = "1-2 - Goal"
     L12X2 = "1-2 - Crystal Goal"
     L12H1 = "1-2 - Extra Life in Upper Well"
+    L12K2 = "1-2 - Cage Key"
 
     L13G1 = "1-3 - Gobbo in First Room"
     L13G2 = "1-3 - Gobbo in Shuffle Well"
@@ -164,6 +177,8 @@ class CrocLocationNames(StrEnum):
     L13X2 = "1-3 - Crystal Goal"
     L13H1 = "1-3 - Extra Life in Secret (First)"
     L13H2 = "1-3 - Extra Life in Secret (Second)"
+    L13K1 = "1-3 - Cage Key"
+    L13K2 = "1-3 - Door Key"
 
     L1B1X1 = "1-B1 - Defeat Tooty the Feeble"
     L1B1H1 = "1-B1 - Extra Life in First Room"
@@ -173,6 +188,8 @@ class CrocLocationNames(StrEnum):
     L1S1H2 = "1-S1 - Extra Life in Worm Well"
     L1S1H3 = "1-S1 - Extra Life at top of Tower (Left)"
     L1S1H4 = "1-S1 - Extra Life at top of Tower (Right)"
+    L1S1K1 = "1-S1 - Cage Key"
+    L1S1K2 = "1-S1 - Door Key"
 
     L14G1 = "1-4 - Gobbo in First Box"
     L14G2 = "1-4 - Gobbo under Rickety Bridge"
@@ -187,6 +204,7 @@ class CrocLocationNames(StrEnum):
     L14CY = "1-4 - Yellow Crystal"
     L14X1 = "1-4 - Goal"
     L14X2 = "1-4 - Crystal Goal"
+    L14K2 = "1-4 - Door Key"
 
     L15G1 = "1-5 - Gobbo Way Up High"
     L15G2 = "1-5 - Gobbo in Arrow Platform Room"
@@ -201,6 +219,7 @@ class CrocLocationNames(StrEnum):
     L15CY = "1-5 - Yellow Crystal"
     L15X1 = "1-5 - Goal"
     L15X2 = "1-5 - Crystal Goal"
+    L15K1 = "1-5 - Cage Key"
 
     L16G1 = "1-6 - Gobbo in Box Stack"
     L16G2 = "1-6 - Gobbo in Chaser Well"
@@ -223,12 +242,17 @@ class CrocLocationNames(StrEnum):
     L1B2H4 = "1-B2 - Extra Life in Secret (Fourth)"
     L1B2H5 = "1-B2 - Extra Life in Secret (Fifth)"
 
-    L21G1 = ""
-    L21G2 = ""
-    L21G3 = ""
-    L21G4 = ""
-    L21G5 = ""
-    L21G6 = ""
+    L1S2X1 = "1-S2 - Puzzle Piece"
+    L1S2H1 = "1-S2 - Extra Life in Bonus Room (Left)"
+    L1S2H2 = "1-S2 - Extra Life in Bonus Room (Right)"
+    L1S2K2 = "1-S2 - Door Key"
+
+    L21G1 = "2-1 - Gobbo in Box in First Room"
+    L21G2 = "2-1 - Gobbo in Box on Monkey Bars"
+    L21G3 = "2-1 - Gobbo after Crumbling Platforms"
+    L21G4 = "2-1 - Gobbo after Balloon"
+    L21G5 = "2-1 - Gobbo in Cage Outside"
+    L21G6 = "2-1 - Gobbo in Crystal Zone"
     L21CP = "2-1 - Pink Crystal"
     L21CR = "2-1 - Red Crystal"
     L21CB = "2-1 - Blue Crystal"
@@ -236,13 +260,14 @@ class CrocLocationNames(StrEnum):
     L21CY = "2-1 - Yellow Crystal"
     L21X1 = "2-1 - Goal"
     L21X2 = "2-1 - Crystal Goal"
+    L21K1 = "2-1 - Cage Key"
 
-    L22G1 = ""
-    L22G2 = ""
-    L22G3 = ""
-    L22G4 = ""
-    L22G5 = ""
-    L22G6 = ""
+    L22G1 = "2-2 - Gobbo in Box in First Room"
+    L22G2 = "2-2 - Gobbo above Starting Pit"
+    L22G3 = "2-2 - Gobbo in Box under Balloon"
+    L22G4 = "2-2 - Gobbo in Box near Gear Pit"
+    L22G5 = "2-2 - Gobbo in Box on Monkey Bar Lake"
+    L22G6 = "2-2 - Gobbo in Crystal Zone"
     L22CP = "2-2 - Pink Crystal"
     L22CR = "2-2 - Red Crystal"
     L22CB = "2-2 - Blue Crystal"
@@ -250,6 +275,7 @@ class CrocLocationNames(StrEnum):
     L22CY = "2-2 - Yellow Crystal"
     L22X1 = "2-2 - Goal"
     L22X2 = "2-2 - Crystal Goal"
+    L22K1 = "2-2 - Cage Key"
 
     L23G1 = ""
     L23G2 = ""
