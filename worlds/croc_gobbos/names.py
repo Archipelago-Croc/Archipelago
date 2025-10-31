@@ -47,6 +47,8 @@ class CrocItemNames(StrEnum):
     WHACKAMOLE = "Whack-a-Mole Minigame"
     CHASERBOX = "Chaser Box Minigame"
     CAULDRON = "Cauldron Catch Minigame"
+    KIDNAPPER = "Kidnapping Dantini"
+    GHOST = "Ghost Race Minigame"
 
     # Crystals. Probably event only? idk how we're doing this yet
     RED = "Red Crystal"
@@ -124,7 +126,7 @@ class CrocLocationNames(StrEnum):
     #   - Gobbo: Numbered (usually in level order)
     #   - Goals: Number for distinction. 1 for main (gong, boss, jigsaw), 2 for gong in the Crystal Zone (if it exists)
     #   - Hearts: Numbered (usually in level order)
-    #   - Keys: Numbered. 1 = the cage key, 2+ = door keys, etc. Don't think there's multiple cage keys in a level anywhere.
+    #   - Keys: Numbered. 1-4 = cage keys, 9 thru 5 = door keys, counting down.
 
     L11G1 = "1-1 - Gobbo on Cork"
     L11G2 = "1-1 - Gobbo in Cork Well"
@@ -178,7 +180,7 @@ class CrocLocationNames(StrEnum):
     L13H1 = "1-3 - Extra Life in Secret (First)"
     L13H2 = "1-3 - Extra Life in Secret (Second)"
     L13K1 = "1-3 - Cage Key"
-    L13K2 = "1-3 - Door Key"
+    L13K9 = "1-3 - Door Key"
 
     L1B1X1 = "1-B1 - Defeat Tooty the Feeble"
     L1B1H1 = "1-B1 - Extra Life in First Room"
@@ -189,7 +191,7 @@ class CrocLocationNames(StrEnum):
     L1S1H3 = "1-S1 - Extra Life at top of Tower (Left)"
     L1S1H4 = "1-S1 - Extra Life at top of Tower (Right)"
     L1S1K1 = "1-S1 - Cage Key"
-    L1S1K2 = "1-S1 - Door Key"
+    L1S1K9 = "1-S1 - Door Key"
 
     L14G1 = "1-4 - Gobbo in First Box"
     L14G2 = "1-4 - Gobbo under Rickety Bridge"
@@ -204,7 +206,7 @@ class CrocLocationNames(StrEnum):
     L14CY = "1-4 - Yellow Crystal"
     L14X1 = "1-4 - Goal"
     L14X2 = "1-4 - Crystal Goal"
-    L14K2 = "1-4 - Door Key"
+    L14K9 = "1-4 - Door Key"
 
     L15G1 = "1-5 - Gobbo Way Up High"
     L15G2 = "1-5 - Gobbo in Arrow Platform Room"
@@ -245,7 +247,7 @@ class CrocLocationNames(StrEnum):
     L1S2X1 = "1-S2 - Jigsaw Piece"
     L1S2H1 = "1-S2 - Extra Life in Bonus Room (Left)"
     L1S2H2 = "1-S2 - Extra Life in Bonus Room (Right)"
-    L1S2K2 = "1-S2 - Door Key"
+    L1S2K9 = "1-S2 - Door Key"
 
     L21G1 = "2-1 - Gobbo in Box in First Room"
     L21G2 = "2-1 - Gobbo in Box on Monkey Bars"
@@ -291,8 +293,8 @@ class CrocLocationNames(StrEnum):
     L23X1 = "2-3 - Goal"
     L23X2 = "2-3 - Crystal Goal"
     L23K1 = "2-3 - Cage Key"
-    L23K2 = "2-3 - Door Key (First)"
-    L23K3 = "2-3 - Door Key (Second)"
+    L23K9 = "2-3 - Door Key (First)"
+    L23K8 = "2-3 - Door Key (Second)"
 
     L2B1X1 = "2-B1 - Defeat Chumly"
 
@@ -352,7 +354,7 @@ class CrocLocationNames(StrEnum):
     L26H3 = "2-6 - Extra Life in Secret (Third)"
     L26H4 = "2-6 - Extra Life in Secret (Fourth)"
     L26H5 = "2-6 - "
-    L26K2 = "2-6 - Door Key"
+    L26K9 = "2-6 - Door Key"
 
     L2B2X1 = "2-B2 - Defeat Itsy the Ice Demon"
 
