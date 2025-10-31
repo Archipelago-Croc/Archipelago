@@ -1,7 +1,10 @@
 from BaseClasses import Tutorial
 from worlds.AutoWorld import World, WebWorld
 
+from .rule_builder import RuleWorldMixin
+
 from .options import CrocOptions
+
 
 class CrocWebWorld(WebWorld):
     theme = "jungle"
@@ -17,10 +20,11 @@ class CrocWebWorld(WebWorld):
 
     tutorials = [setup_en]
 
-class CrocWorld(World):
+class CrocWorld(RuleWorldMixin, World):
     """The Archipelago Randomizer World for Croc: The Legend of the Gobbos. If you see this on a website, I didn't finish the documentation, so yell at me for it."""
 
     game = "Croc: Legend of the Gobbos"
     options: CrocOptions
     options_dataclass = CrocOptions
     web = CrocWebWorld()
+    rule_caching_enabled = False
