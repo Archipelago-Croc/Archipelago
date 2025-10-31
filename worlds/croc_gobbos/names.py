@@ -30,6 +30,7 @@ class CrocItemNames(StrEnum):
     STRETCHPLAT = "Stretching Platforms"
     LAVAPLAT = "Lava Platforms"
     TRIGGERPLAT = "Triggered Platforms"
+    GEAR = "Gears"
 
     # Interactibles
     BOXBREAK = "Box Break"
@@ -45,6 +46,7 @@ class CrocItemNames(StrEnum):
     SHUFFLE = "Shell Game Minigame"
     WHACKAMOLE = "Whack-a-Mole Minigame"
     CHASERBOX = "Chaser Box Minigame"
+    CAULDRON = "Cauldron Catch Minigame"
 
     # Crystals. Probably event only? idk how we're doing this yet
     RED = "Red Crystal"
