@@ -3,7 +3,7 @@ from enum import StrEnum
 class CrocItemNames(StrEnum):
     # Collectibles
     GOBBO = "Gobbo"
-    PUZZLE = "Puzzle Piece"
+    PUZZLE = "Jigsaw Piece"
     LIFE = "Extra Life"
 
     # Movement
@@ -122,7 +122,7 @@ class CrocLocationNames(StrEnum):
     # Last character is an indentifier:
     #   - Crystals: Letter for color (P Pink, R Red, B Blue, G Green, Y Yellow)
     #   - Gobbo: Numbered (usually in level order)
-    #   - Goals: Number for distinction. 1 for main (gong, boss, puzzle), 2 for gong in the Crystal Zone (if it exists)
+    #   - Goals: Number for distinction. 1 for main (gong, boss, jigsaw), 2 for gong in the Crystal Zone (if it exists)
     #   - Hearts: Numbered (usually in level order)
     #   - Keys: Numbered. 1 = the cage key, 2+ = door keys, etc. Don't think there's multiple cage keys in a level anywhere.
 
@@ -183,7 +183,7 @@ class CrocLocationNames(StrEnum):
     L1B1X1 = "1-B1 - Defeat Tooty the Feeble"
     L1B1H1 = "1-B1 - Extra Life in First Room"
 
-    L1S1X1 = "1-S1 - Puzzle Piece"
+    L1S1X1 = "1-S1 - Jigsaw Piece"
     L1S1H1 = "1-S1 - Extra Life in Cage"
     L1S1H2 = "1-S1 - Extra Life in Worm Well"
     L1S1H3 = "1-S1 - Extra Life at top of Tower (Left)"
@@ -242,7 +242,7 @@ class CrocLocationNames(StrEnum):
     L1B2H4 = "1-B2 - Extra Life in Secret (Fourth)"
     L1B2H5 = "1-B2 - Extra Life in Secret (Fifth)"
 
-    L1S2X1 = "1-S2 - Puzzle Piece"
+    L1S2X1 = "1-S2 - Jigsaw Piece"
     L1S2H1 = "1-S2 - Extra Life in Bonus Room (Left)"
     L1S2H2 = "1-S2 - Extra Life in Bonus Room (Right)"
     L1S2K2 = "1-S2 - Door Key"
@@ -296,8 +296,8 @@ class CrocLocationNames(StrEnum):
 
     L2B1X1 = "2-B1 - Defeat Chumly"
 
-    L2S1X1 = "2-S1 - Puzzle Piece"
-    L2S1H1 = "2-S1 - Extra Life near Puzzle Piece"
+    L2S1X1 = "2-S1 - Jigsaw Piece"
+    L2S1H1 = "2-S1 - Extra Life near Jigsaw Piece"
 
     L24G1 = ""
     L24G2 = ""
@@ -332,6 +332,7 @@ class CrocLocationNames(StrEnum):
     L25CY = "2-5 - Yellow Crystal"
     L25X1 = "2-5 - Goal"
     L25X2 = "2-5 - Crystal Goal"
+    L25K1 = "2-5 - Cage Key"
 
     L26G1 = ""
     L26G2 = ""
@@ -346,6 +347,17 @@ class CrocLocationNames(StrEnum):
     L26CY = "2-6 - Yellow Crystal"
     L26X1 = "2-6 - Goal"
     L26X2 = "2-6 - Crystal Goal"
+    L26H1 = "2-6 - Extra Life in Secret (First)"
+    L26H2 = "2-6 - Extra Life in Secret (Second)"
+    L26H3 = "2-6 - Extra Life in Secret (Third)"
+    L26H4 = "2-6 - Extra Life in Secret (Fourth)"
+    L26H5 = "2-6 - "
+    L26K2 = "2-6 - Door Key"
+
+    L2B2X1 = "2-B2 - Defeat Itsy the Ice Demon"
+
+    L2S2X1 = "2-S2 - Jigsaw Piece"
+    L2S2H1 = "2-S2 - Extra Life in Raft Room"
 
     L31G1 = ""
     L31G2 = ""
