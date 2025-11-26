@@ -446,12 +446,12 @@ class CrocLocationNames(StrEnum):
     L34K9 = "3-4 - Door Key (First)"  # Jelly Room to Mud Pit
     L34K8 = "3-4 - Door Key (Second)"  # Mud Pit to Lava Pit
 
-    L35G1 = ""
-    L35G2 = ""
-    L35G3 = ""
-    L35G4 = ""
-    L35G5 = ""
-    L35G6 = ""
+    L35G1 = "3-5 - Gobbo in Cage in First Room"
+    L35G2 = "3-5 - Gobbo in Cage in Second Room"
+    L35G3 = "3-5 - Gobbo in Box Bridge"
+    L35G4 = "3-5 - Gobbo in Raft Room"
+    L35G5 = "3-5 - Gobbo before Swinging Traps"
+    L35G6 = "3-5 - Gobbo in Crystal Zone"
     L35CP = "3-5 - Pink Crystal"
     L35CR = "3-5 - Red Crystal"
     L35CB = "3-5 - Blue Crystal"
@@ -467,12 +467,12 @@ class CrocLocationNames(StrEnum):
     L35K2 = "3-5 - Cage Key (Second)"  # Second Room
     L35K3 = "3-5 - Cage Key (Third)"  # Crystal Zone Ghost Chase
 
-    L36G1 = ""
-    L36G2 = ""
-    L36G3 = ""
-    L36G4 = ""
-    L36G5 = ""
-    L36G6 = ""
+    L36G1 = "3-6 - Gobbo in Crossroads"
+    L36G2 = "3-6 - Gobbo in Left Room"
+    L36G3 = "3-6 - Gobbo in Upper Room"
+    L36G4 = "3-6 - Gobbo in Cave Pit Room"
+    L36G5 = "3-6 - Gobbo on Goal Room Pillar"
+    L36G6 = "3-6 - Gobbo in Crystal Zone"
     L36CP = "3-6 - Pink Crystal"
     L36CR = "3-6 - Red Crystal"
     L36CB = "3-6 - Blue Crystal"
@@ -480,13 +480,29 @@ class CrocLocationNames(StrEnum):
     L36CY = "3-6 - Yellow Crystal"
     L36X1 = "3-6 - Goal"
     L36X2 = "3-6 - Crystal Goal"
+    L36K1 = "3-6 - Cage Key (First)"  # Right Room
+    L36K2 = "3-6 - Cage Key (Second)"  # Upper Room
+    L36K3 = "3-6 - Cage Key (Third)"  # Upper Left Room
+    L36K4 = "3-6 - Cage Key (Fourth)"  # Crystal Zone Ghost Chase
+    L36K9 = "3-6 - Door Key (First)"  # Crossroads to Upper Room
+    L36K8 = "3-6 - Door Key (Second)"  # Upper to Upper Left Room
 
-    L41G1 = ""
-    L41G2 = ""
-    L41G3 = ""
-    L41G4 = ""
-    L41G5 = ""
-    L41G6 = ""
+    L3B2X1 = "3-B2 - Defeat Cactus Jack"
+    L3B2H1 = "3-B2 - Extra Life in First Room"
+    L3B2H2 = "3-B2 - Extra Life in Second Room"
+
+    L3S2X1 = "3-S2 - Jigsaw Piece"
+    L3S2H1 = "3-S2 - Extra Life in First Room (Left)"
+    L3S2H2 = "3-S2 - Extra Life in First Room (Right)"
+    L3S2H3 = "3-S2 - Extra Life in Second Room"
+    L3S2K1 = "3-S2 - Cage Key"
+
+    L41G1 = "4-1 - Gobbo at Bottom of First Tower"
+    L41G2 = "4-1 - Gobbo after Swinging Trap"
+    L41G3 = "4-1 - Gobbo in First Prison Cell"
+    L41G4 = "4-1 - Gobbo in Second Prison Cell"
+    L41G5 = "4-1 - Gobbo in Third Prison Cell"
+    L41G6 = "4-1 - Gobbo in Crystal Zone"
     L41CP = "4-1 - Pink Crystal"
     L41CR = "4-1 - Red Crystal"
     L41CB = "4-1 - Blue Crystal"
@@ -494,6 +510,8 @@ class CrocLocationNames(StrEnum):
     L41CY = "4-1 - Yellow Crystal"
     L41X1 = "4-1 - Goal"
     L41X2 = "4-1 - Crystal Goal"
+    L41H1 = "4-1 - Extra Life at Bottom of First Tower (First)"
+    L41H2 = "4-1 - Extra Life at Bottom of First Tower (Second)"
 
     L42G1 = ""
     L42G2 = ""
