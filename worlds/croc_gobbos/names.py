@@ -428,11 +428,11 @@ class CrocLocationNames(StrEnum):
     L3S1H1 = "3-S1 - Extra Life in First Room"
 
     L34G1 = "3-4 - Gobbo in First Room"
-    L34G2 = ""
-    L34G3 = ""
-    L34G4 = ""
-    L34G5 = ""
-    L34G6 = ""
+    L34G2 = "3-4 - Gobbo in Monkey Bar Pit"
+    L34G3 = "3-4 - Gobbo Under Yellow Crystal"
+    L34G4 = "3-4 - Gobbo Floating above Mud"
+    L34G5 = "3-4 - Gobbo Across from Gong"
+    L34G6 = "3-4 - Gobbo in Crystal Zone"
     L34CP = "3-4 - Pink Crystal"
     L34CR = "3-4 - Red Crystal"
     L34CB = "3-4 - Blue Crystal"
@@ -440,6 +440,11 @@ class CrocLocationNames(StrEnum):
     L34CY = "3-4 - Yellow Crystal"
     L34X1 = "3-4 - Goal"
     L34X2 = "3-4 - Crystal Goal"
+    L34K1 = "3-4 - Cage Key (First)"  # First Room
+    L34K2 = "3-4 - Cage Key (Second)"  # Monkey Bar Pit
+    L34K3 = "3-4 - Cage Key (Third)"  # Crystal Zone Ghost Chase
+    L34K9 = "3-4 - Door Key (First)"  # Jelly Room to Mud Pit
+    L34K8 = "3-4 - Door Key (Second)"  # Mud Pit to Lava Pit
 
     L35G1 = ""
     L35G2 = ""
@@ -454,6 +459,13 @@ class CrocLocationNames(StrEnum):
     L35CY = "3-5 - Yellow Crystal"
     L35X1 = "3-5 - Goal"
     L35X2 = "3-5 - Crystal Goal"
+    L35H1 = "3-5 - Extra Life in Secret (Top)"
+    L35H2 = "3-5 - Extra Life in Secret (Bottom)"
+    L35H3 = "3-5 - Extra Life in Secret (Left)"
+    L35H4 = "3-5 - Extra Life in Secret (Right)"
+    L35K1 = "3-5 - Cage Key (First)"  # First Room
+    L35K2 = "3-5 - Cage Key (Second)"  # Second Room
+    L35K3 = "3-5 - Cage Key (Third)"  # Crystal Zone Ghost Chase
 
     L36G1 = ""
     L36G2 = ""
